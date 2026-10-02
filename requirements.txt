@@ -1,0 +1,24 @@
+# Core
+sqlalchemy>=2.0.0
+python-dotenv>=1.0.0
+pyodbc>=5.0.0
+
+# Origen Oracle
+oracledb>=1.4.0
+
+# Origen PostgreSQL
+psycopg2-binary>=2.9.0
+
+# Origen SAP HANA
+hdbcli>=2.19.0
+
+# Origen SharePoint Online
+msal>=1.28.0
+requests>=2.31.0
+
+# Origen Excel
+pandas>=2.0.0
+openpyxl>=3.1.0     # .xlsx y .xlsm
+xlrd>=2.0.1         # .xls genuino (Excel 97-2003)
+lxml>=4.9.0         # .xls SpreadsheetML (XML exportado por sistemas web)
+

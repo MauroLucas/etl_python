@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Edit(**/.env)",
+      "Edit(**/.env.*)",
+      "Read(**/*.xls)",
+      "Read(**/*.xlsx)",
+      "Read(**/*.xlsm)",
+      "Read(**/*.csv)",
+
+      "Bash(python run_pipeline.py:*)",
+      "Bash(.venv/Scripts/python.exe run_pipeline.py:*)",
+      "Bash(python etl_flow.py:*)",
+      "Bash(.venv/Scripts/python.exe etl_flow.py:*)",
+      "Bash(sqlcmd:*)",
+      "Bash(bcp:*)",
+      "Bash(hdbsql:*)",
+      "Bash(psql:*)",
+      "Bash(sqlplus:*)",
+      "Bash(env)",
+      "Bash(printenv:*)",
+      "Bash(prefect:*)",
+
+      "PowerShell(python run_pipeline.py:*)",
+      "PowerShell(.venv\\Scripts\\python.exe run_pipeline.py:*)",
+      "PowerShell(python etl_flow.py:*)",
+      "PowerShell(sqlcmd:*)",
+      "PowerShell(bcp:*)",
+      "PowerShell(hdbsql:*)",
+      "PowerShell(psql:*)",
+      "PowerShell(sqlplus:*)",
+      "PowerShell(Get-ChildItem Env:*)",
+      "PowerShell(dir env:*)",
+      "PowerShell(ls env:*)",
+      "PowerShell(prefect:*)"
+    ]
+  }
+}
