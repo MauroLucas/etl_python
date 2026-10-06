@@ -263,7 +263,7 @@
     "all_string": true,
     "chunk_size": 10000,
     "nvarchar_max_length": 5000,
-    "tags": ["diario"],
+    "tags": ["diario","ventas"],
     "enabled": true
   },
   {
@@ -275,7 +275,7 @@
     "date_filter": null,
     "all_string": true,
     "chunk_size": 10000,
-    "tags": ["diario"],
+    "tags": ["diario","ventas"],
     "enabled": true
   },
   {
@@ -767,6 +767,58 @@
     "target_table": "SAP_KONP",
     "target_schema": "raw",
     "query": "SELECT * FROM SAPHANADB.KONP WHERE MANDT = '300' ",
+    "date_filter": null,
+    "all_string": true,
+    "chunk_size": 10000,
+    "nvarchar_max_length": 5000,
+    "tags": ["diario"],
+    "enabled": true
+  },
+  {
+    "source_name": "hana",
+    "source_table": "SAPHANADB.T001L",
+    "target_table": "SAP_T001L",
+    "target_schema": "raw",
+    "query": "SELECT * FROM SAPHANADB.T001L WHERE MANDT = '300' ",
+    "date_filter": null,
+    "all_string": true,
+    "chunk_size": 10000,
+    "nvarchar_max_length": 5000,
+    "tags": ["diario"],
+    "enabled": true
+  },
+  {
+    "source_name": "hana",
+    "source_table": "SAPHANADB.T156T",
+    "target_table": "SAP_T156T",
+    "target_schema": "raw",
+    "query": "SELECT * FROM SAPHANADB.T156T WHERE MANDT = '300' AND SPRAS = 'S' ",
+    "date_filter": null,
+    "all_string": true,
+    "chunk_size": 10000,
+    "nvarchar_max_length": 5000,
+    "tags": ["diario"],
+    "enabled": true
+  },
+  {
+    "source_name": "hana",
+    "source_table": "SAPHANADB.T134T",
+    "target_table": "SAP_T134T",
+    "target_schema": "raw",
+    "query": "SELECT * FROM SAPHANADB.T134T WHERE MANDT = '300' AND SPRAS = 'S' ",
+    "date_filter": null,
+    "all_string": true,
+    "chunk_size": 10000,
+    "nvarchar_max_length": 5000,
+    "tags": ["diario"],
+    "enabled": true
+  },
+  {
+    "source_name": "hana",
+    "source_table": "SAPHANADB.MATDOC",
+    "target_table": "SAP_MATDOC",
+    "target_schema": "raw",
+    "query": "SELECT MANDT, MBLNR, MJAHR, ZEILE, RECORD_TYPE, BUDAT, BLDAT, CPUDT, CPUTM, USNAM, MATBF, MATNR, WERKS, LGORT_SID, CHARG_SID, LBBSA_SID, SOBKZ, BWART, SHKZG, STOCK_QTY, MENGE, MEINS, DMBTR, WAERS, SMBLN, SJAHR, SMBLP FROM SAPHANADB.MATDOC WHERE MANDT = '300' ",
     "date_filter": null,
     "all_string": true,
     "chunk_size": 10000,
