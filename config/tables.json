@@ -190,19 +190,7 @@
     "tags": ["diario","producto","productoretailpro"],
     "enabled": true
   },
-  {
-    "source_name": "oracle",
-    "source_table": "RPS.STORE",
-    "target_table": "RETAILPRO_STORE",
-    "target_schema": "raw",
-    "query": null,
-    "date_filter": null,
-    "all_string": true,
-    "chunk_size": 10000,
-    "nvarchar_max_length": -1,
-    "tags": ["diario"],
-    "enabled": true
-  },
+
   {
     "source_name": "oracle",
     "source_table": "RPS.DOCUMENT",
@@ -444,20 +432,6 @@
     "enabled": true
   },
 
-  {
-    "source_name": "hana",
-    "source_table": "SAPHANADB.TSPAT",
-    "target_table": "SAP_TSPAT",
-    "target_schema": "raw",
-    "query": "SELECT * FROM SAPHANADB.TSPAT",
-    "date_filter": null,
-    "all_string": true,
-    "chunk_size": 10000,
-    "tags": ["diario"],
-    "enabled": true
-  },
-
-
   
   {
     "source_name": "sqlserver2",
@@ -527,19 +501,7 @@
     "tags": ["diario"],
     "enabled": false
   },
-  {
-    "source_name": "hana",
-    "source_table": "SAPHANADB.T001",
-    "target_table": "SAP_T001",
-    "target_schema": "raw",
-    "query": null,
-    "date_filter": null,
-    "all_string": true,
-    "chunk_size": 10000,
-    "nvarchar_max_length": 5000,
-    "tags": ["diario"],
-    "enabled": true
-  },
+  
   {
     "source_name": "hana",
     "source_table": "SAPHANADB.TKA01",
